@@ -10,7 +10,7 @@ function Header2() {
     {/* Left section (Logo) */}
     <div className="flex items-center">
       <Image
-        src={"/logo2.png"}
+        src={"/lo2.png"}
         alt="Nike Logo"
         width={35} height={35}
       />

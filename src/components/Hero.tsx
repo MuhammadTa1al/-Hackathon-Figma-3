@@ -20,7 +20,7 @@ export default function Hero() {
       </div>
       <div className="relative h-screen">
         <Image
-          src="/image1.png" // Ensure the image exists in the public folder
+          src="/Im1.png" // Ensure the image exists in the public folder
           alt="Sneaker"
           layout="fill"
           objectFit="cover"
@@ -78,7 +78,7 @@ export default function Hero() {
           {/* Product 1 */}
           <div className="border border-[#FFFFFF] rounded-md p-4">
             <Image
-              src="/image2.png"
+              src="/im2.png"
               alt="Nike Air Max Pulse"
               width={400}
               height={400}
@@ -98,7 +98,7 @@ export default function Hero() {
           {/* Product 2 */}
           <div className="border border-[#FFFFFF] rounded-md p-4">
             <Image
-              src="/image2.png"
+              src="/im2.png"
               alt="Nike Air Max Pulse"
               width={400}
               height={400}
@@ -118,7 +118,7 @@ export default function Hero() {
           {/* Product 3 */}
           <div className="border border-[#FFFFFF] rounded-md p-4">
             <Image
-              src="/image3.png"
+              src="/im3.png"
               alt="Nike Air Max 97 SE"
               width={400}
               height={400}
@@ -141,7 +141,7 @@ export default function Hero() {
       <div className="relative bg-[#F5F5F5] py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <Image
-            src="/image4.png"
+            src="/im4.png"
             alt="Running Man"
             width={1400}
             height={700}
@@ -194,7 +194,7 @@ export default function Hero() {
             {/* Men's Section */}
             <div className="text-start flex flex-col items-start">
               <Image
-                src="/image5.png"
+                src="/im5.png"
                 alt="Men's Top"
                 width={300}
                 height={300}
@@ -207,7 +207,7 @@ export default function Hero() {
             </div>
             <div className="text-start flex flex-col items-start">
               <Image
-                src="/image6.png"
+                src="/im6.png"
                 alt="Men's Top"
                 width={300}
                 height={300}
@@ -220,7 +220,7 @@ export default function Hero() {
             </div>
             <div className="text-start flex flex-col items-start">
               <Image
-                src="/image7.png"
+                src="/im7.png"
                 alt="Men's Top"
                 width={300}
                 height={300}
@@ -234,7 +234,7 @@ export default function Hero() {
 
             <div className="text-start flex flex-col items-start">
               <Image
-                src="/image8.png"
+                src="/im8.png"
                 alt="Men's Top"
                 width={300}
                 height={300}
@@ -256,7 +256,7 @@ export default function Hero() {
       {/* Fullscreen Sneaker Image */}
       <div className="relative  ">
         <Image
-          src="/image9.png" // Replace with the actual image in the public folder
+          src="/im9.png" // Replace with the actual image in the public folder
           alt="Sneaker"
           width={1400}
           height={700}
@@ -289,7 +289,7 @@ export default function Hero() {
 <div className="flex flex-col items-center justify-center min-h-screen bg-white">
   {/* Fullscreen Product Image */}
   <Image
-    src="/Image10.png" // Replace with actual image path
+    src="/Im10.png" // Replace with actual image path
     alt="Nike Air Max Pulse"
     layout="intrinsic"
     width={1200} // Increased width for a larger image

@@ -15,7 +15,7 @@ export default function ProductDetails() {
         {/* Left Section - Image */}
         <div className="relative flex items-center justify-center w-full lg:w-1/2">
           <Image
-            src="/image11.png"  // Update this to use AirForce image if required
+            src="/im11.png"  // Update this to use AirForce image if required
             alt="Nike Air Force 1 PLT.AF.ORM Shoe Image"
             className="w-full h-auto object-cover"
             width={400}
