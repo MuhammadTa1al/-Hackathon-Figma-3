@@ -6,7 +6,7 @@ import Button from './Button';
 const Page = () => {
   return (
     <div className="flex flex-col items-center py-10 bg-[#FFFFFF] w-[1452px]">
-      <Image className="pb-5" src="/logo2.png" width={40} height={10} alt="Logo" />
+      <Image className="pb-5" src="/lo2.png" width={40} height={10} alt="Logo" />
       <h2 className="uppercase text-center font-bold pb-5 text-[#111111]">
         BECOME A NIKE MEMBER
       </h2>
