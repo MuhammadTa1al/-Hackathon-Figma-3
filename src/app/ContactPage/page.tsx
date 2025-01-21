@@ -8,7 +8,7 @@ import Image from 'next/image'
 
 
 
-const page = () => {
+const Page = (): React.ReactElement => {
   return (
     <div className='w-[1440px] h-[100vh]'>
       <Header />
@@ -148,4 +148,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -6,17 +6,26 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "import-data": "node scripts/importSanityData.mjs"
   },
   "dependencies": {
+    "@sanity/client": "^6.25.0",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.71.0",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
     "next": "15.1.2",
+    "next-sanity": "^9.8.39",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.4.0"
+    "react-icons": "^5.4.0",
+    "sanity": "^3.71.0",
+    "styled-components": "^6.1.14"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
+    "@types/node": "^20.17.14",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
     "eslint": "^9",
