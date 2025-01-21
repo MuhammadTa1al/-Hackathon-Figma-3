@@ -8,6 +8,10 @@ export interface NikeProduct{
     colors: string, 
     status: string,
     description: string,
+    slug: {
+        _type : "slug"
+        current :string,
+    }
     image: {
         asset : {
             _ref : string,

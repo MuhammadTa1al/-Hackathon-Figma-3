@@ -181,7 +181,7 @@ const Page: React.FC = () => {
           <div className=" w-[1092px]   grid grid-cols-3 gap-4">
             {products.map((product) => (
               <div key={product._id} className="shadow-xl rounded-b-lg">
-                <Link href={`/Component`}>
+                <Link href={`/Components/products ${product.slug.current}`}>
                 {product.image && (
                   <Image
                     src={urlFor(product.image).url()}
