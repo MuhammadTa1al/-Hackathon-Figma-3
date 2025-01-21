@@ -9,7 +9,7 @@ import { allProducts } from "@/sanity/lib/queries";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 
-const Page = () => {
+const Page: React.FC = () => {
   const [products, setProducts] = useState<NikeProduct[]>([]);
   useEffect(() => {
     async function dataProduct() {
