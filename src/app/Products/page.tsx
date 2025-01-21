@@ -9,15 +9,15 @@ import { allProducts } from "@/sanity/lib/queries";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 
-const page = () => {
-  const [product, setProduct] = useState<NikeProduct[]>([]);
+const Page = () => {
+  const [products, setProducts] = useState<NikeProduct[]>([]);
   useEffect(() => {
     async function dataProduct() {
       const dataProducts: NikeProduct[] = await client.fetch(allProducts);
-      setProduct(dataProducts);
+      setProducts(dataProducts);
     }
     dataProduct();
-  });
+  }, []);
   return (
     <div>
       {/* All Products Section */}
@@ -179,7 +179,7 @@ const page = () => {
           </div>
 
           <div className=" w-[1092px]   grid grid-cols-3 gap-4">
-            {product.map((product) => (
+            {products.map((product) => (
               <div key={product._id} className="shadow-xl rounded-b-lg">
                 <Link href={`/Component`}>
                 {product.image && (
@@ -211,6 +211,6 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
 
 
