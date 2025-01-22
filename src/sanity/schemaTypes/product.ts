@@ -10,7 +10,7 @@ export const productSchema = {
       },
       {
         name: 'slug',
-        title: 'slug',
+        title: 'Slug',
         type: 'slug',
         options : {
           source : "productName"

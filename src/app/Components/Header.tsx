@@ -11,7 +11,7 @@ const Header = () => {
         
 
         <div className='flex gap-4'>
-        <Link href="/Products" className="text-[#111111]">Find a Store</Link>
+        <Link href="/AllProducts" className="text-[#111111]">Find a Store</Link>
         <p className="text-[#111111] font-bold">|</p>
         <Link href="/ContactPage" className="text-[#111111]">Help</Link>
         <p className="text-[#111111] font-bold">|</p>
