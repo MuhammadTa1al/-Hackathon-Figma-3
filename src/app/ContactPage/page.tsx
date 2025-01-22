@@ -25,7 +25,7 @@ const page = () => {
                 <Link href="/" className="underline text-black">Nike Members</Link> can store multiple debit or credit cards in their profile for faster checkout. If you are not already a Member, <Link href="/JoinUs" className="underline text-black">Join Us</Link> today.
               </p>
               <div className='flex flex-col md:flex-row'>
-                <Link href='/JoinUs' className='px-6 py-3 bg-black text-[#FFFFFF] font-medium rounded-full hover:bg-gray-800 transition mb-2 md:mb-0 md:mr-2'>Join Us</Link>
+                <Link href='/JoinNow' className='px-6 py-3 bg-black text-[#FFFFFF] font-medium rounded-full hover:bg-gray-800 transition mb-2 md:mb-0 md:mr-2'>Join Us</Link>
                 <Link href='/Products' className='px-6 py-3 bg-black text-[#FFFFFF] font-medium rounded-full hover:bg-gray-800 transition'>Shop Nike</Link>
               </div>
             </div>
@@ -59,7 +59,7 @@ const page = () => {
             </div>
           </div>
           {/* Right Side Content */}
-          <div className='w-full md:w-[313px] h-auto border-l-2 md:border-l-0 md:border-l-2 md:mt-0 mt-4'>
+          <div className='w-full md:w-[313px] h-auto border-l-2 md:border-l-2 md:mt-0 mt-4'>
             <p className='flex justify-center text-xl font-bold'>CONTACT US</p>
             <div className='flex flex-col gap-8'>
               <div className='flex flex-col items-center gap-4 my-8'>
