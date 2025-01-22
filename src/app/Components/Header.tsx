@@ -29,7 +29,7 @@ const Header = () => {
             Help
           </Link>
           <p className="text-[#111111] font-bold">|</p>
-          <Link href="/JoinUs" className="text-[#111111]">
+          <Link href="/JoinNow" className="text-[#111111]">
             Join Us
           </Link>
           <p className="text-[#111111] font-bold">|</p>
