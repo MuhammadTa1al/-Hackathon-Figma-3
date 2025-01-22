@@ -4,95 +4,71 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <footer className='w-[1440px] bg-[#000] text-[#7E7E7E] px-12 pt-12'>
-        <div className=' flex justify-between '>
-            <div className='flex text-white  gap-4'>
-            <ul className='uppercase flex flex-col gap-4'>
-            <li><Link href='#' className='font-sans'>Find A Store</Link></li>
-            <li><Link href='#' className='font-sans'>Become A Member</Link></li>
-            <li><Link href='#' className='font-sans'>Sign Up for Email</Link></li>
-            <li><Link href='#' className='font-sans'>Send Us Feedback</Link></li>
-            <li><Link href='#' className='font-sans'>Student Discounts</Link></li>
-            </ul>
-            </div>
-            <div className='flex text-white  gap-4'>
-            <ul className='flex flex-col gap-4 text-[#7E7E7E]'>
-            <li><Link href='#' className='font-sans uppercase text-white'>Get Help</Link></li>
-            <li><Link href='#' className='font-sans'>Order Status</Link></li>
-            <li><Link href='#' className='font-sans'>Delivery</Link></li>
-            <li><Link href='#' className='font-sans'>Returns</Link></li>
-            <li><Link href='#' className='font-sans'>Payment Options</Link></li>
-            <li><Link href='#' className='font-sans'>Contact Us On Nike.com Inquiries</Link></li>
-            <li><Link href='#' className='font-sans'>Contact Us On All Other Inquiries</Link></li>
-            </ul>
+    <footer className='bg-[#000] text-[#7E7E7E] px-4 sm:px-6 lg:px-12 pt-8 lg:pt-12'>
+      <div className='flex flex-col lg:flex-row justify-between  gap-8'>
+        <div className='flex flex-col sm:flex-row text-white gap-8'>
+          <ul className='uppercase flex flex-col  gap-4'>
+            <li><Link href='#' className='font-sans text-sm'>Find A Store</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Become A Member</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Sign Up for Email</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Send Us Feedback</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Student Discounts</Link></li>
+          </ul>
+          <ul className='flex flex-col gap-4  text-[#7E7E7E]'>
+            <li><Link href='#' className='font-sans uppercase text-white text-sm'>Get Help</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Order Status</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Delivery</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Returns</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Payment Options</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Contact Us On Nike.com Inquiries</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Contact Us On All Other Inquiries</Link></li>
+          </ul>
+
+          <ul className='flex flex-col gap-4 text-[#7E7E7E]'>
+            <li><Link href='#' className='font-sans uppercase text-white text-sm'>About Nike</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>News</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Careers</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Investors</Link></li>
+          </ul>
         </div>
 
+        <div className='flex flex-col sm:flex-row text-white gap-8 lg:w-auto'>
+          
 
-        <div className='flex justify-between  text-white  gap-4 w-[800px]'>
-            <ul className=' flex flex-col gap-4 text-[#7E7E7E] '>
-            <li><Link href='#' className='font-sans uppercase text-white'>About Nike</Link></li>
-            <li><Link href='#' className='font-sans'>News</Link></li>
-            <li><Link href='#' className='font-sans'>Careers</Link></li>
-            <li><Link href='#' className='font-sans'>Investors</Link></li>
-            <li><Link href='#' className='font-sans'>Investors</Link></li>
-            </ul>
-
-            <div className='flex  gap-4'>
-                <Link href='#'>
+          <div className='flex gap-4'>
+            {['19', '20', '21', '22'].map((num) => (
+              <Link key={num} href='#'>
                 <Image
-                src= "/image/Frame (19).png"
-                alt="Twitter"
-                width="30"
-                height="30"
+                  src={`/image/Frame (${num}).png`}
+                  alt="Social Media"
+                  width={30}
+                  height={30}
                 />
-                </Link>
-
-                <Link href='#'>
-                <Image
-                src= "/image/Frame (20).png"
-                alt="Twitter"
-                width="30"
-                height="30"
-                />
-                </Link>
-
-                <Link href='#'>
-                <Image
-                src= "/image/Frame (21).png"
-                alt="Twitter"
-                width="30"
-                height="30"
-                />
-                </Link>
-
-                <Link href='#'>
-                <Image
-                src= "/image/Frame (22).png"
-                alt="Twitter"
-                width="30"
-                height="30"
-                />
-                </Link>
-            </div>
+              </Link>
+            ))}
+          </div>
         </div>
+      </div>
 
+      <div className='flex flex-col sm:flex-row justify-between items-center mt-8 py-4 border-t border-[#7E7E7E]'>
+        <div className='text-center sm:text-left mb-4 sm:mb-0'>
+          <p className='font-sans text-sm'> 
+            <Link href="#" className="font-sans text-white">
+              <i className="fa-solid fa-location-dot"></i> Pakistan
+            </Link>
+            <span className='px-3 font-sans text-sm'> © 2025 Nike, Inc. All rights reserved.</span>
+          </p>
         </div>
-        <div className='flex justify-between items-center h-[62px]  mt-12'>
-        <div className='w-screen  px-3 '>
-            <p className='font-sans'> 
-                <Link href="#" className=" font-sans text-white"><i className="fa-solid fa-location-dot "></i>  Pakistan</Link>
-                 <span className='px-3 font-sans'> &copy; 2025 Nike, Inc. All rights reserved.</span></p>
+        <div className='flex flex-wrap justify-center sm:justify-end gap-4'>
+          <Link href='#' className='font-sans text-sm'>Guides</Link>
+          <Link href='#' className='font-sans text-sm'>Terms of Sale</Link>
+          <Link href='#' className='font-sans text-sm'>Terms of Use</Link>
+          <Link href='#' className='font-sans text-sm'>Nike Privacy Policy</Link>
         </div>
-        <div className='flex gap-4 w-[780px]'>
-        <Link href='#' className='font-sans'>Guides</Link>
-          <Link href='#' className='font-sans '>Terms oF Sale</Link>
-          <Link href='#' className='font-sans'>Terms of Use</Link>
-          <Link href='#' className='font-sans '>Nike Privacy Policy</Link>
-        </div>
-        </div>
-
+      </div>
     </footer>
   )
 }
 
 export default Footer
+

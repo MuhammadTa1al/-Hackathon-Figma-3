@@ -1,79 +1,97 @@
-import React from 'react'
-import Header from '../Components/Header'
-import Footer from '../Components/Footer'
-import Image from 'next/image'
-import Link from 'next/link'
+import React from "react"
+import Header from "../Components/Header"
+import Footer from "../Components/Footer"
+import Image from "next/image"
+import Link from "next/link"
 
-
-const page = () => {
+const Page = () => {
   return (
-    <div className='w-[1440px] h-[100vh]'>
-        <Header/>
-        {/* Join Us section */}
-      <main className='flex justify-center items-center' >
-        <div className=' w-[380px] h-[833px]  mx-9'>
-            <div className='flex flex-col items-center mx-9  '>
-<div>
-              <Image
-              src="/image/Frame (2).png"
-              alt="Nike Logo"
-              width={60} height={60}
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-grow flex justify-center items-center p-4 sm:p-6 md:p-8">
+        <div className="w-full max-w-md">
+          <div className="flex flex-col items-center mb-6">
+            <Image src="/image/Frame (2).png" alt="Nike Logo" width={60} height={60} />
+            <h2 className="font-bold text-center text-lg mt-4">BECOME A NIKE MEMBER</h2>
+            <p className="text-center text-gray-500 text-sm mt-2">
+              Create your Nike Member profile and get first access to the very best of Nike products, inspiration and
+              community.
+            </p>
+          </div>
+
+          <form className="space-y-4">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email address"
+              className="w-full h-10 px-3 border-2 rounded-md"
             />
+            <input
+              type="password"
+              name="Password"
+              placeholder="Password"
+              className="w-full h-10 px-3 border-2 rounded-md"
+            />
+            <input
+              type="text"
+              name="First Name"
+              placeholder="First Name"
+              className="w-full h-10 px-3 border-2 rounded-md"
+            />
+            <input
+              type="text"
+              name="Last Name"
+              placeholder="Last Name"
+              className="w-full h-10 px-3 border-2 rounded-md"
+            />
+            <input
+              type="date"
+              name="Date of birth"
+              placeholder="dd/mm/yyyy"
+              className="w-full h-10 px-3 border-2 rounded-md"
+            />
+            <p className="text-center text-gray-500 text-sm">Get a Nike Member Reward every year on your Birthday.</p>
+            <div>
+              <label htmlFor="country" className="sr-only">
+                Country
+              </label>
+              <select className="w-full h-10 border-2 rounded-md text-gray-500 px-3" id="country" required>
+                <option value="India">India</option>
+                <option value="United States">United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Canada">Canada</option>
+              </select>
             </div>
-            <h2 className='font-bold w-[231px] text-center text-lg'>BECOME A NIKE MEMBER</h2>
-            <p className='text-center text-[#8D8D8D] text-md font-sans my-3'>Create your Nike Member profile and get first access to the very best of Nike products, inspiration and community.</p>
-    
+            <div className="flex gap-2">
+              <button className="flex-1 h-11 text-gray-500 border border-gray-300 rounded-md">Male</button>
+              <button className="flex-1 h-11 text-gray-500 border border-gray-300 rounded-md">Female</button>
             </div>
-
-            {/* input feilds  */}
-            <div className='flex flex-col gap-4 mx-8 '>
-                <input type="email" name="email" id=""  placeholder='Email address 'className='w-[324px] h-[40px] px-2 border-[2px] rounded-md  '/>
-                <input type="password" name="Password" id="" placeholder='Password' className='w-[324px] h-[40px] px-2 border-[2px] rounded-md'/>
-                <input type="text" name="First Name" id=""  placeholder='First Name' className='w-[324px] h-[40px] px-2 border-[2px] rounded-md'/>
-                <input type="text" name="Last Name" id=""  placeholder='Last Name' className='w-[324px] h-[40px] px-2 border-[2px] rounded-md'/>
-                <input type="date" name="Date of birth" id=""  placeholder='dd/mm/yyyy' className='w-[324px] h-[40px] px-2 border-[2px]  rounded-md'/>
-                <div>
-                    <p className='text-center text-[#8D8D8D] text-sm font-sans my-1'>Get a Nike Member Reward every year on your Birthday.</p>
-                    <div> <label htmlFor="country" className="sr-only">Country</label>
-        <select
-          className="w-[324px] h-[40px] border-[#E5E5E5] rounded-md text-[#8D8D8D] mb-4 px-4 border-[2px]"
-          id="country"
-          required
-        >
-          <option value="India">India</option>
-          <option value="United States">United States</option>
-          <option value="United Kingdom">United Kingdom</option>
-          <option value="Pakistan">Pakistan</option>
-          <option value="Canada">Canada</option>
-        </select></div>
-                    <div className='mb-3'>
-                    <button className='w-[143px] h-[43px] text-[#8D8D8D] border border-[#8D8D8D] mx-2 rounded-md' >Male</button>
-                    <button className='w-[143px] h-[43px] text-[#8D8D8D] border border-[#8D8D8D] rounded-md' >Female</button>
-                    </div>
-                    <div className='flex items-center  my-2 font-sans  '><input type="checkbox" name="" id="" className='w-8 h-8 ' /><p className='text-[#8D8D8D] text-sm pl-2 '>Sign up for emails to get updates from Nike on products, offers and your Member benefits</p></div> 
-                    <p className="text-center text-[#8D8D8D] text-sm font-sans my-2 ">
-                    By creating an account you agree to Nikes{" "}
-            <Link href="#" className="underline text-black ">
-             Privacy Policy and Terms of Use.
-            </Link>
-          </p>
-          <div>
-      <button className='w-[324px] h-[40px] bg-[#000000] text-white font-sans rounded-md my-3'>JOIN US</button>
-    </div>
-    <p className="text-center text-[#8D8D8D] text-sm font-sans  ">
-    Already a Member? {" "}
-            <Link href="/SignIn" className="underline text-black ">
-            Sign In.
-            </Link>
-          </p>
-                </div>
+            <div className="flex items-start">
+              <input type="checkbox" className="mt-1 mr-2" />
+              <p className="text-gray-500 text-sm">
+                Sign up for emails to get updates from Nike on products, offers and your Member benefits
+              </p>
             </div>
-
-            </div>
+            <p className="text-center text-gray-500 text-sm">
+              By creating an account you agree to Nikes{" "}
+              <Link href="#" className="underline text-black">
+                Privacy Policy and Terms of Use.
+              </Link>
+            </p>
+            <button className="w-full h-10 bg-black text-white font-sans rounded-md">JOIN US</button>
+            <p className="text-center text-gray-500 text-sm">
+              Already a Member?{" "}
+              <Link href="/SignIn" className="underline text-black">
+                Sign In.
+              </Link>
+            </p>
+          </form>
+        </div>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   )
 }
 
-export default page
+export default Page
