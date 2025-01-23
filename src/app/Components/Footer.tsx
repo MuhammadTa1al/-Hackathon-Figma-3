@@ -8,20 +8,20 @@ const Footer = () => {
       <div className='flex flex-col lg:flex-row justify-between  gap-8'>
         <div className='flex flex-col sm:flex-row text-white gap-8'>
           <ul className='uppercase flex flex-col  gap-4'>
-            <li><Link href='/Products' className='font-sans text-sm'>Find A Store</Link></li>
-            <li><Link href='/Products' className='font-sans text-sm'>Become A Member</Link></li>
-            <li><Link href='/Products' className='font-sans text-sm'>Sign Up for Email</Link></li>
-            <li><Link href='/Products' className='font-sans text-sm'>Send Us Feedback</Link></li>
-            <li><Link href='/Products' className='font-sans text-sm'>Student Discounts</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Find A Store</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Become A Member</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Sign Up for Email</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Send Us Feedback</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Student Discounts</Link></li>
           </ul>
           <ul className='flex flex-col gap-4  text-[#7E7E7E]'>
-            <li><Link href='/ContactPage' className='font-sans uppercase text-white text-sm'>Get Help</Link></li>
-            <li><Link href='/ContactPage' className='font-sans text-sm'>Order Status</Link></li>
-            <li><Link href='/ContactPage' className='font-sans text-sm'>Delivery</Link></li>
-            <li><Link href='/ContactPage' className='font-sans text-sm'>Returns</Link></li>
-            <li><Link href='/ContactPage' className='font-sans text-sm'>Payment Options</Link></li>
-            <li><Link href='/ContactPage' className='font-sans text-sm'>Contact Us On Nike.com Inquiries</Link></li>
-            <li><Link href='/ContactPage' className='font-sans text-sm'>Contact Us On All Other Inquiries</Link></li>
+            <li><Link href='#' className='font-sans uppercase text-white text-sm'>Get Help</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Order Status</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Delivery</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Returns</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Payment Options</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Contact Us On Nike.com Inquiries</Link></li>
+            <li><Link href='#' className='font-sans text-sm'>Contact Us On All Other Inquiries</Link></li>
           </ul>
 
           <ul className='flex flex-col gap-4 text-[#7E7E7E]'>
@@ -60,10 +60,10 @@ const Footer = () => {
           </p>
         </div>
         <div className='flex flex-wrap justify-center sm:justify-end gap-4'>
-          <Link href='/ContactPage' className='font-sans text-sm'>Guides</Link>
-          <Link href='/ContactPage' className='font-sans text-sm'>Terms of Sale</Link>
-          <Link href='/ContactPage' className='font-sans text-sm'>Terms of Use</Link>
-          <Link href='/ContactPage' className='font-sans text-sm'>Nike Privacy Policy</Link>
+          <Link href='#' className='font-sans text-sm'>Guides</Link>
+          <Link href='#' className='font-sans text-sm'>Terms of Sale</Link>
+          <Link href='#' className='font-sans text-sm'>Terms of Use</Link>
+          <Link href='#' className='font-sans text-sm'>Nike Privacy Policy</Link>
         </div>
       </div>
     </footer>

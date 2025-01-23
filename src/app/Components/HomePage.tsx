@@ -1,23 +1,10 @@
-"use client";
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import Header from './Header'
 import Footer from './Footer'
-import { Product } from '@/types/product'
-import { four } from "@/sanity/lib/queries";
-import { client } from "@/sanity/lib/client";
-import { urlFor } from "@/sanity/lib/image";
 
 const HomePage = () => {
-   const [products, setProducts] = useState<Product[]>([]);
-    useEffect(() => {
-      async function dataProduct() {
-        const dataProducts: Product[] = await client.fetch(four);
-        setProducts(dataProducts);
-      }
-      dataProduct();
-    }, []);
   return (
     <div className='min-h-screen flex flex-col'>
       <Header />
@@ -98,27 +85,30 @@ const HomePage = () => {
           </div>
 
           <div className='grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-6'>
-            {products.map((product) => (
-              <div key={product._id} className="border border-[#FFFFFF]  shadow-xl rounded-md p-4">
+            {[
+              { src: "/image/Image (9).png", title: "Nike Air Max Pulse", category: "Women's Shoes" },
+              { src: "/image/Image (10).png", title: "Nike Air Max Pulse", category: "Men's Shoes" },
+              { src: "/image/Image (11).png", title: "Nike Air Max 97 SE", category: "Women's Shoes" },
+            ].map((product, index) => (
+              <div key={index} className="border border-[#FFFFFF]  shadow-xl  rounded-md p-4">
                 <div className="relative aspect-w-1 aspect-h-1 mb-4">
-                {product.image && (
                   <Image
-                    src={urlFor(product.image).url()}
-                    alt={product.productName}
-                    width="348"
-                    height="348"
-                    className="rounded-t-lg"
+                    src={product.src || "/placeholder.svg"}
+                    alt={product.title}
+                    width={600}
+                    height={600}
+                    // layout="fill"
+                    objectFit="cover"
                   />
-                )}
                 </div>
                 <div className="flex justify-between items-start">
                   <div>
                     <h3 className="font-medium text-lg text-[#111111]">
-                      {product.productName}
+                      {product.title}
                     </h3>
                     <p className="text-[#757575] text-sm">{product.category}</p>
                   </div>
-                  <p className="font-bold text-[#111111]">₹ {product.price}.00</p>
+                  <p className="font-bold text-[#111111]">₹ 13,995</p>
                 </div>
               </div>
             ))}
@@ -171,7 +161,7 @@ const HomePage = () => {
                 </div>
                 <div className='grid grid-cols-1  sm:grid-cols-2 gap-6'>
                   {[13, 14, 15, 16].slice(index * 2, (index * 2) + 2).map((num) => (
-                    <div key={num} className='mb-6  border border-[#FFFFFF]  shadow-xl rounded-md p-4'>
+                    <div key={num} className='mb-6  border border-[#FFFFFF]  shadow-xl  rounded-md p-4'>
                       <div className='relative  aspect-w-1 aspect-h-1 mb-4'>
                         <Image
                           src={`/image/Image (${num}).png`}
@@ -248,7 +238,7 @@ const HomePage = () => {
             <div key={index} className='flex flex-col gap-4'>
               <p className='font-bold'>{category}</p>
               {['Air Force 1', 'Huarache', 'Air Max 90', 'Air Max 95'].map((item, i) => (
-                <Link key={i} href="/Products" className='text-[#757575] text-sm'>{item}</Link>
+                <Link key={i} href="#" className='text-[#757575] text-sm'>{item}</Link>
               ))}
             </div>
           ))}

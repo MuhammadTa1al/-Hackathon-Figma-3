@@ -29,7 +29,7 @@ const Header = () => {
             Help
           </Link>
           <p className="text-[#111111] font-bold">|</p>
-          <Link href="/JoinNow" className="text-[#111111]">
+          <Link href="/JoinUs" className="text-[#111111]">
             Join Us
           </Link>
           <p className="text-[#111111] font-bold">|</p>
@@ -42,10 +42,7 @@ const Header = () => {
       {/* Second Head */}
       <nav className="flex justify-end items-center w-full px-4 sm:px-12 py-4">
         <div className="flex justify-start w-96">
-          <Link href='/'>
           <Image src="/image/Frame (2).png" alt="Nike Logo" width={35} height={35} />
-          </Link>
-          
         </div>
 
         {/* Mobile Menu Button */}
